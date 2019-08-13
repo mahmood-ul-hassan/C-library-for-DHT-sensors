@@ -15,7 +15,7 @@
 #include "cy_pdl.h"
 #include "cycfg.h"
 #include <stdio.h>
-#include "DHT22.h"
+#include "DHT.h"
 
 /* Variable used for storing UART context */
 static cy_stc_scb_uart_context_t KP_UART_context;
