@@ -36,7 +36,7 @@ DHT_status DHT_begin(DHT_config* DHT){
     DHT->temperature = 999;
     DHT->humidity = 999;
 
-	if( (DHT->sensor_type != DHT11) || (DHT->sensor_type != DHT12) || (DHT->sensor_type != DHT21) || (DHT->sensor_type != DHT22) || (DHT->sensor_type != AM2301))
+	if( (DHT->sensor_type != DHT11) && (DHT->sensor_type != DHT12) && (DHT->sensor_type != DHT21) && (DHT->sensor_type != DHT22) && (DHT->sensor_type != AM2301)){
 		return INVALID_SENSOR;
 	if(!CY_GPIO_IS_PIN_VALID(DHT->pinNum))
 		return INVALID_PIN;
